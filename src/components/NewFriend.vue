@@ -37,6 +37,7 @@ export default {
     submitData() {
       this.newFriend.id = new Date().toISOString()
       this.$emit('add-new-friend', this.newFriend)
+      this.newFriend = {}
     }
   }
 }
